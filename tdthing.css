@@ -1,0 +1,60 @@
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #edf1ed;
+  padding: 20px;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.output {
+  display: none;
+  margin-left: 20px;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.agent-heading {
+  font-size: 24px;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+button,
+input {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#myList {
+  text-align: center;
+}
+
+#searchInput {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom:10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:90%
+
+}

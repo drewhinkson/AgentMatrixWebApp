@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="tdthing.css">
+  <title>Agent Skills Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 8px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #f4f4f4;
+      margin-left:700px;
+      margin-top:40px;
+     
+    }
+    .container {
+      width: 80%;
+      max-width: 800px;
+    }
+    #newAgentSkills{
+max-width:100%;
+min-width:100%;
+    }
+    .agent-form, .agent-selection {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .agent-form input, .agent-form textarea, 
+    .agent-selection select, .agent-selection button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .agent-form button, .agent-selection button {
+      background-color: #0056b3;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .agent-form button:hover, .agent-selection button:hover {
+      background-color: #003d82;
+    }
+    .button-row {
+      display: flex;
+      flex-direction: column;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 5px;
+      background: #e9e9e9;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="agent-form">
+      <h2 class="agent-heading">Add New Agent</h2>
+      <input type="text" id="newAgentName" placeholder="Enter New Agent Name">
+      <textarea id="newAgentSkills" placeholder="Enter skills and scores (e.g., ESD_Canada:5, ESD_TDI:3)"></textarea>
+      <button id="addAgentBtn">Add Agent</button>
+    </div>
+
+    <div class="agent-selection">
+      <h2 class="agent-heading">Agent Information</h2>
+      <input type="text" id="searchInput" onkeyup="filterAgents()" placeholder="Search agents...">
+      <select id="select1">
+       
+
+        <!-- More options can be added here -->
+      </select>
+      <div class="button-row">
+       
+        <button id="deleteAgentBtn">Delete Agent</button>
+      </div>
+      <h3 class="agent-heading">Agent Skills</h3>
+      <ul id="myList"></ul>
+    </div>
+    <button id="downloadJsBtn">Save Data</button>
+
+  </div>
+
+  <script src="tdthing.js"></script>
+</body>
+</html>
